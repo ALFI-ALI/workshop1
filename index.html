@@ -1,0 +1,73 @@
+<!--<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form action="">
+            <p>principal :<input type="number" id="principal" placeholder="0"></p>
+            <p>interest : <input type="number"  id="interest"></p>
+            <p id="resulte">loan length :<input type="number"id = "loanlength"></p>
+            <p id="re"><input type="text"></p>
+            <button id="pp" onclick="calculateMortgage()">calculate</button>
+        </form>
+
+</div>
+<script src="index.js"></script>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+              
+    <title>Morgtage Calculator</title>
+</head>
+<body class="silver">
+    <div class="container shadow rounded-3 p-3 white mt-5">
+        <h1 class="display-1 text-center">morgtage calculator</h1>
+        <form id="morgtage">
+            <main class="row mx-5">
+                <div class="input-field">
+                    <input type="number" class="autocomplete" id="homeValue">
+                    <label>Home Value</label>
+                </div>
+                <div class="input-field">
+                    <input type="number" class="autocomplete" id="downpayment">
+                    <label>Down Payment</label>
+                </div>
+                <div class="input-field">
+                    <input type="number" class="autocomplete" id="loanAmount" readonly placeholder="Loan Amount">
+                    <label>Loan Amount</label>
+                </div>
+                <div class="input-field">
+                    <input type="text" class="autocomplete" id="interestRate">
+                    <label>Interest Rate</label>
+                </div>
+                <div class="input-field">
+                    <input type="number" class="autocomplete" id="loanDuration">
+                    <label>Loan Duration (Years)</label>
+                </div>
+            </main>
+            <footer class="row-cls-1 align-items-center m-5">
+                <button class="btn btn-large" type="submit">calculate</button>
+                <button class="btn btn-large rounded-pill orange mt-5" type="submit">calculate</button>
+            </footer>
+        </form>
+    </div>
+    
+</body>
+</html>
